@@ -18,6 +18,10 @@
   main form button {
     width: 200px;
   }
+
+  .list-ingredients {
+    width: 600px;
+  }
 }
 
 /* @media screen and(min-width: 1024px) {

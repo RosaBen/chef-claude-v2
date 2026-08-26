@@ -62,7 +62,7 @@ main {
 }
 
 main form {
-  height: 300px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,8 +75,9 @@ main form input {
   border-radius: 0.4rem;
   padding: 0.5rem;
   width: 300px;
+  box-shadow: 0px 1px 2px 0px var(--dark);
 }
-
+/* box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05); */
 main form button {
   border-radius: 0.4rem;
   padding: 0.5rem;
@@ -85,4 +86,24 @@ main form button {
   color: var(--white);
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-weight: 700;
+  box-shadow: 0px 2px 4px 0px var(--dark);
+}
+
+.list-ingredients {
+  width: 300px;
+  margin: 0 auto 2rem;
+}
+
+.list-ingredients h2 {
+  margin-bottom: 1rem;
+}
+
+.list-ingredients ul {
+  margin-left: 2rem;
+}
+
+.list-ingredients li {
+  line-height: 1.4;
+  text-transform: capitalize;
 }
