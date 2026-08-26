@@ -4,7 +4,7 @@ import express from "express";
 // import path from "path";
 // import cookieParser from 'cookie-parser';
 // import logger from "morgan";
-import ingredientRouter from "./routes/ingredients.js";
+import instructionsRouter from "./routes/instructions.js";
 import recipeRouter from "./routes/recipe.js";
 
 const app = express();
@@ -19,7 +19,7 @@ app.use(express.json());
 // app.use(cookieParser());
 // app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/api/ingredient', ingredientRouter);
+app.use('/api/instructions', instructionsRouter);
 app.use('/api/recipe', recipeRouter);
 
 // catch 404 and forward to error handler

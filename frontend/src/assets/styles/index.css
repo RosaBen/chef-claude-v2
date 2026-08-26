@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: grey;
+}
