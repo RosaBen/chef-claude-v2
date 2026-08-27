@@ -9,20 +9,72 @@
 
   main form {
     flex-direction: row;
+    width: 600px;
+    margin: 0 auto;
   }
 
   main form input {
-    width: 500px;
+    width: 400px;
   }
 
   main form button {
     width: 200px;
   }
 
-  .list-ingredients {
+  .list-ingredients,
+  .get-recipe {
     width: 600px;
+  }
+
+  .get-recipe {
+    grid-template-columns: 80% 20%;
+    grid-template-areas: "title btn" "txt btn";
+    padding-right: 3rem;
+    padding-left: 2rem;
+  }
+
+  .get-recipe h2 {
+    grid-area: title;
+    justify-self: left;
+  }
+  .get-recipe p {
+    grid-area: txt;
+    justify-self: left;
+  }
+
+  .get-recipe button {
+    grid-area: btn;
+    height: 30px;
+    align-self: center;
+    justify-self: center;
   }
 }
 
-/* @media screen and(min-width: 1024px) {
-} */
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  main {
+    width: 1024px;
+  }
+
+  main form,
+  .list-ingredients,
+  .get-recipe {
+    width: 900px;
+  }
+
+  main form input {
+    width: 700px;
+  }
+
+  main form button {
+    width: 200px;
+  }
+
+  .list-ingredients ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+}
