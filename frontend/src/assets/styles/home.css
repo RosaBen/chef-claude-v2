@@ -122,8 +122,6 @@ main form button {
 .get-recipe {
   width: 300px;
   margin: 0 auto 2rem;
-  /* display: grid; */
-  display: none;
   grid-template-columns: 1fr;
   gap: 1rem;
   background: var(--bg);
