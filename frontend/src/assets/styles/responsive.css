@@ -1,10 +1,12 @@
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 
   main {
     width: 768px;
+    display: flex;
+    flex-direction: column;
   }
 
   main form {
@@ -22,7 +24,8 @@
   }
 
   .list-ingredients,
-  .get-recipe {
+  .get-recipe,
+  .recipe-instructions {
     width: 600px;
   }
 
@@ -48,9 +51,9 @@
     align-self: center;
     justify-self: center;
   }
-}
+} */
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .container {
     max-width: 1024px;
   }
@@ -60,7 +63,8 @@
 
   main form,
   .list-ingredients,
-  .get-recipe {
+  .get-recipe,
+  .recipe-instructions {
     width: 900px;
   }
 
@@ -77,4 +81,4 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem;
   }
-}
+} */
