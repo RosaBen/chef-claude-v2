@@ -48,7 +48,7 @@ export function getRandomRecipe () {
   return recipeIndex;
 }
 
-export const ingredients = ["chicken", "cream", "mushroom"];
+export const ingredients = [];
 
 export const recipe = [
   {

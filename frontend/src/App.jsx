@@ -43,7 +43,7 @@ function App() {
     <>
       <div className="container">
         <Header />
-        <Home />
+        <Home ingredients={ingredients} />
       </div>
     </>
   );
