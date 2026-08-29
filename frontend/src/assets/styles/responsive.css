@@ -5,6 +5,8 @@
 
   main {
     width: 768px;
+    display: flex;
+    flex-direction: column;
   }
 
   main form {
@@ -22,7 +24,9 @@
   }
 
   .list-ingredients,
-  .get-recipe {
+  .get-recipe,
+  .recipe-instructions,
+  .markdown-section {
     width: 600px;
   }
 
@@ -60,7 +64,9 @@
 
   main form,
   .list-ingredients,
-  .get-recipe {
+  .get-recipe,
+  .recipe-instructions,
+  .markdown-section {
     width: 900px;
   }
 

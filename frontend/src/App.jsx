@@ -22,23 +22,6 @@ import "./assets/styles/home.css";
 import "./assets/styles/responsive.css";
 
 function App() {
-  // const [recipe, setRecipe] = useState(null);
-  // useEffect(() => {
-  //   // async function loadData() {
-  //   //   try {
-  //   //     const randomRecipe = await getRecipe(ingredients);
-  //   //     console.log(randomRecipe);
-  //   //     // setRecipe(randomRecipe.id);
-  //   //     // console.log(recipe);
-  //   //   } catch (error) {
-  //   //     console.error(error);
-  //   //   }
-  //   // }
-  //   // getRecipeInstructions(640352);
-  //   // setRecipe(recipes[getRandomRecipe(recipes)]);
-  //   // loadData();
-  // }, []);
-
   return (
     <>
       <div className="container">
