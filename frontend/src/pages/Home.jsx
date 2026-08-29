@@ -3,19 +3,33 @@ import Form from "../components/Form";
 import Ingredients from "../components/Ingredients";
 import RecipeTest from "../components/RecipeTest";
 import { recipeMd } from "../assets/scripts/api";
-// import generateRecipe from "../assets/scripts/ai.js";
+import ReactMarkdown from "react-markdown";
+// import generateRecipe from "../assets/scripts/ai.js"; TOKEEP
 
 export default function Home({ ingredients }) {
   const [newIngr, setNewIngr] = useState(ingredients);
   const [showRecipe, setShowRecipe] = useState(false);
 
+  // TO KEEP
   // async function getRecipe() {
   //   const recipeGenerated = await generateRecipe(newIngr);
   //   console.log(recipeGenerated);
   // }
 
   function getRecipe() {
-    return <section>{recipeMd}</section>;
+    const markdown = recipeMd;
+    return (
+      <section className="markdown-section">
+        <ReactMarkdown
+          components={{
+            h1: ({ children }) => <h2>{children}</h2>,
+            h2: ({ children }) => <h3>{children}</h3>,
+          }}
+        >
+          {markdown}
+        </ReactMarkdown>
+      </section>
+    );
   }
   return (
     <main>

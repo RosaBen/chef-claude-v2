@@ -116,7 +116,8 @@ main form button {
 
 .list-ingredients,
 .recipe-instructions,
-.get-recipe {
+.get-recipe,
+.markdown-section {
   width: 300px;
   margin: 0 auto 2rem;
 }
@@ -164,5 +165,9 @@ main form button {
 .suggested-recipe-container ul,
 .suggested-recipe-container ol {
   margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.markdown-section p {
   margin-bottom: 1rem;
 }
