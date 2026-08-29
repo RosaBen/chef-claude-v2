@@ -6,6 +6,7 @@ import express from "express";
 // import logger from "morgan";
 import instructionsRouter from "./routes/instructions.js";
 import recipeRouter from "./routes/recipe.js";
+import aiRouter from "./routes/ai.js";
 
 const app = express();
 
@@ -21,6 +22,7 @@ app.use(express.json());
 
 app.use('/api/instructions', instructionsRouter);
 app.use('/api/recipe', recipeRouter);
+app.use("/api/ai", aiRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
