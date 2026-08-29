@@ -13,7 +13,18 @@ export default function Home({ ingredients }) {
   // TO KEEP
   // async function getRecipe() {
   //   const recipeGenerated = await generateRecipe(newIngr);
-  //   console.log(recipeGenerated);
+  //   return (
+  //     <section className="markdown-section">
+  //       <ReactMarkdown
+  //         components={{
+  //           h1: ({ children }) => <h2>{children}</h2>,
+  //           h2: ({ children }) => <h3>{children}</h3>,
+  //         }}
+  //       >
+  //         {recipeGenerated}
+  //       </ReactMarkdown>
+  //     </section>
+  //   );
   // }
 
   function getRecipe() {
@@ -31,6 +42,7 @@ export default function Home({ ingredients }) {
       </section>
     );
   }
+
   return (
     <main>
       <Form ingredients={ingredients} set={setNewIngr} />
